@@ -1,0 +1,25 @@
+{
+  "name": "chatbot-api/autoload",
+  "description": "API for Chatbot-IO",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ChatbotApi\\Autoload\\": "src/",
+      "App\\": [
+        "src/",
+        "app/"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "GuillaumeSR",
+      "email": "guillaume.samsonrichert@gmail.com"
+    },
+    {
+      "name": "Maxime-L-G",
+      "email": "maxime.lecourt457@gmail.com"
+    }
+  ],
+  "require": {}
+}
