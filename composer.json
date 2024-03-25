@@ -4,11 +4,8 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "ChatbotApi\\Autoload\\": "src/",
-      "App\\": [
-        "src/",
-        "app/"
-      ]
+      "App\\": "src/",
+      "App\\Controllers\\": "src/controllers/"
     }
   },
   "authors": [

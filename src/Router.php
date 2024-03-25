@@ -46,12 +46,18 @@ class Router{
 
   protected function run() {
     (string) $url = parse_url($this->url, PHP_URL_PATH);
+    (bool) $ifRouteNotExist = true;
 
-    foreach($this->routes as $route => $controller) {
-      if ($this->matchRule($this->url, $route)) {
+    foreach ($this->routes as $route => $controller) {
+      if ($this->matchRule($url, $route)) {
+        $ifRouteNotExist = false;
         (array) $params = $this->extractParams($url, $route);
-        var_dump($params);
+
+        new $controller($params);
       }
+    }
+    if ($ifRouteNotExist) {
+      echo '404 Not Found';
     }
   }
 }
