@@ -8,5 +8,5 @@ use App\Controllers\User;
 
 new Router([
   'user/:id' => User::class,
-  'message/hello/:toto' => Message::class
+  'message' => Message::class
 ]);
