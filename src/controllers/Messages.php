@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Message {
+class Messages {
     protected array $params;
     protected string $reqMethod;
  
