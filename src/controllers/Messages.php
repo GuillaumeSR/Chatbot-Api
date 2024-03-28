@@ -16,9 +16,9 @@ class Messages {
         $message =  [
           'author' => 'Cyril',
           'avatar' => '',
-          'type' => 'bot',
+          'userType' => 'bot',
           'date' => '25/03/2024',
-          'text' => 'Hello World',
+          'content' => 'Hello World',
           'toto' => 'tutu'
         ];
         return [
