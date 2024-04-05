@@ -15,9 +15,9 @@ class SqlConnect {
   public function __construct() {
     $this->host = '127.0.0.1';
     $this->port = '3306';
-    $this->dbname = 'demo';
+    $this->dbname = 'chatbot_io';
     $this->user = 'root';
-    $this->password = 'root';
+    $this->password = '';
 
     $this->db = new PDO(
       'mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->dbname,
